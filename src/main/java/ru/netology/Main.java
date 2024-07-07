@@ -1,4 +1,5 @@
 package ru.netology;
+
 import java.util.*;
 
 public class Main {
@@ -9,7 +10,6 @@ public class Main {
         for (int i = 0; i < texts.length; i++) {
             texts[i] = generateText("aab", 30_000);
         }
-
 
 
         long startTs = System.currentTimeMillis(); // start time
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Time: " + (endTs - startTs) + "ms");
     }
 
-    public static void getNumberRepit (String text) {
+    public static void getNumberRepit(String text) {
         int maxSize = 0;
         for (int i = 0; i < text.length(); i++) {
             for (int j = 0; j < text.length(); j++) {
